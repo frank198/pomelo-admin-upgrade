@@ -1,7 +1,15 @@
 {
-  "name": "pomelo-admin2",
+  "name": "pomelo-admin-upgrade",
   "version": "0.0.1",
   "private": false,
+
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/frank198/pomelo-admin2#license"
+    }
+  ],
+
   "dependencies": {
     "heapdump": "0.3.7",
     "lodash": "^4.17.4",
@@ -9,11 +17,10 @@
     "pomelo-scheduler": "0.3.8",
     "socket.io": "0.9.16",
     "socket.io-client": "0.9.16",
-    "v8-profiler": "^5.6.5"
-  },
-  "peerDependencies": {
+    "v8-profiler": "^5.6.5",
     "pomelo-logger": "0.1.7"
   },
+
   "devDependencies": {
     "should": ">=0.0.1",
     "mocha": ">=0.0.1",
