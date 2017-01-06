@@ -7,7 +7,7 @@ var ConsoleService = require('../lib/consoleService');
 var WAIT_TIME = 100;
 
 var masterHost = '127.0.0.1';
-var masterPort = 3333;
+var masterPort = 8000;
 
 describe('agent', function() {
 	it('should emit a error if master agent listen a port in use', function(done) {
