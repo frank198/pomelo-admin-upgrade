@@ -1,6 +1,6 @@
 {
   "name": "pomelo-admin-upgrade",
-  "version": "0.0.6",
+  "version": "0.0.10",
   "private": false,
 
   "licenses": [
@@ -17,8 +17,12 @@
     "pomelo-scheduler": "0.3.8",
     "socket.io": ">=1.7.1",
     "socket.io-client": ">=1.7.1",
-    "v8-profiler": "^5.6.5",
     "pomelo-logger": "0.1.7"
+  },
+
+  "peerDependencies":
+  {
+    "v8-profiler": "^5.6.5"
   },
 
   "devDependencies": {

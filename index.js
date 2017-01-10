@@ -1,4 +1,5 @@
 const fs = require('fs');
+const defineGetter = require('./lib/util/utils').DefineGetter;
 const consoleService = require('./lib/consoleService');
 
 module.exports.createMasterConsole = consoleService.createMasterConsole;
@@ -15,7 +16,7 @@ fs.readdirSync(`${dirName}/lib/modules`).forEach(function(filename)
 		const _module = require(`./lib/modules/${name}`);
 		if (!_module.moduleError)
 		{
-			exports.modules.__defineGetter__(name, function()
+			defineGetter(exports.modules, name, () =>
 			{
 				return _module;
 			});
