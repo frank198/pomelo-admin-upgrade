@@ -17,6 +17,11 @@ module.exports = {
         afterEach: true,
     },
     "rules": {
+	    "indent": [
+		    "error",
+		    "tab",
+		    { "SwitchCase": 1 }
+	    ],
         "no-unsafe-finally": "error",
         "no-empty-function": "error",
         "no-empty-pattern": "error",
@@ -81,7 +86,6 @@ module.exports = {
         "comma-style":["error", "last"],
         "computed-property-spacing": ["error", "never"],
         "consistent-this": ["error", "self"],
-        "indent": ["error", "tab"],
         "key-spacing": ["error", {
             "singleLine": {
                 "beforeColon": false,

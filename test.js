@@ -2,8 +2,8 @@
  * Created by Administrator on 2016/12/9 0009.
  */
 
-var Master = require('./lib/masterAgent');
-var Monitor = require('./lib/monitorAgent');
+var Master = require('./lib/master/masterAgent');
+var Monitor = require('./lib/monitor/monitorAgent');
 var consoleService = require('./lib/consoleService');
 
 var master = consoleService.createMasterConsole().agent;

@@ -1,7 +1,7 @@
 var should = require('should');
 var flow = require('flow');
-var Master = require('../lib/masterAgent');
-var Monitor = require('../lib/monitorAgent');
+var Master = require('../lib/master/masterAgent');
+var Monitor = require('../lib/monitor/monitorAgent');
 var ConsoleService = require('../lib/consoleService');
 
 var WAIT_TIME = 100;
