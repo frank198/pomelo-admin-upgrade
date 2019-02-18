@@ -1,32 +1,75 @@
 {
   "name": "pomelo-admin-upgrade",
-  "version": "0.0.12.1",
+  "version": "1.0.1",
   "private": false,
-
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/frank198/pomelo-admin2#license"
-    }
-  ],
-
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frank198/pomelo-admin.git"
+  },
   "dependencies": {
-    "heapdump": ">=0.3.7",
-    "lodash": "^4.17.4",
-    "pomelo-monitor": "0.3.7",
-    "pomelo-scheduler": "0.3.8",
-    "pomelo-logger": "0.1.7",
-    "mqtt-connection": "^3.0.0"
+    "heapdump": ">=0.3.12",
+    "lodash": "^4.17.11",
+    "pomelo-scheduler-upgrade": "^1.0.0",
+    "pomelo-logger-upgrade": "^2.x",
+    "v8-profiler-node8": "^6.x",
+    "mqtt-connection": "^4.0.0"
   },
-
-  "peerDependencies":
-  {
-    "v8-profiler": "^5.6.5"
-  },
-
   "devDependencies": {
-    "should": ">=0.0.1",
-    "mocha": ">=0.0.1",
-    "flow": ">=0.0.1"
+    "flow": "*",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "rules": {
+      "comma-style": "error",
+      "consistent-this": [
+        "error",
+        "_this"
+      ],
+      "indent": [
+        "error",
+        4,
+        {
+          "SwitchCase": 1,
+          "VariableDeclarator": 2
+        }
+      ],
+      "keyword-spacing": "error",
+      "no-buffer-constructor": "warn",
+      "no-console": "off",
+      "no-multi-spaces": "error",
+      "func-call-spacing": "error",
+      "no-trailing-spaces": "error",
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": "error",
+      "space-before-blocks": "error",
+      "space-before-function-paren": [
+        "error",
+        "never"
+      ],
+      "space-infix-ops": "error",
+      "space-unary-ops": "error",
+      "no-var": "warn",
+      "prefer-const": "warn",
+      "strict": [
+        "error",
+        "global"
+      ]
+    }
   }
 }
